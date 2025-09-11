@@ -49,6 +49,12 @@ const items = [
 		icon: 'devicon-github-original',
 		href: 'https://github.com',
 	},
+    {
+		name: 'GitHub Copilot',
+		type: 'img',
+		src: ' https://cdn.simpleicons.org/githubcopilot',
+		href: 'https://github.com',
+	},
 ]
 
 export default function Credits() {
