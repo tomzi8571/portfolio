@@ -3,7 +3,7 @@ import {skills} from '../data/skills.js'
 
 const TABS = ['All', 'Deployment', 'Frontend', 'Backend', 'Others']
 
-export default function Skills({filter, onFilterChange}) {
+export function Skills({filter, onFilterChange}) {
     const [showIcons, setShowIcons] = useState(true)
 
     const items = useMemo(() => {
@@ -11,7 +11,7 @@ export default function Skills({filter, onFilterChange}) {
         return skills.filter((s) => s.category === filter)
     }, [filter])
 
-    const getTabs = () => <>
+    const Selector = () => <>
         {TABS.map((t) => (
             <button
                 key={t}
@@ -39,7 +39,7 @@ export default function Skills({filter, onFilterChange}) {
         }
     </div>;
 
-    const ScrollButtons = () => <ul className="flex flex-wrap gap-2">
+    const SkillButtons = () => <ul className="flex flex-wrap gap-2">
         {items.map((s) => (
             <li key={s.name} className="list-none">
                 <button
@@ -69,14 +69,21 @@ export default function Skills({filter, onFilterChange}) {
         <div>
             <div className="mb-8 flex flex-wrap items-center justify-between gap-3">
                 <div className="flex flex-wrap gap-2">
-                    {getTabs()}
+                    <Selector/>
                 </div>
                 {ShowIconsButton(false)}
 
                 {/* Flowing, content-width buttons */}
-                {ScrollButtons()}
+                <SkillButtons/>
             </div>
         </div>
 
     )
 }
+
+
+
+
+
+
+

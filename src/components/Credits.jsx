@@ -1,61 +1,6 @@
 import React from 'react'
-import { site } from '../config/site.js'
-
-const items = [
-	{
-		name: 'React',
-		type: 'devicon',
-		icon: 'devicon-react-original',
-		href: 'https://react.dev',
-	},
-	{
-		name: 'Tailwind CSS',
-		type: 'devicon',
-		icon: 'devicon-tailwindcss-plain',
-		href: 'https://tailwindcss.com',
-	},
-	{
-		name: 'jsDelivr',
-		type: 'img',
-		src: 'https://cdn.simpleicons.org/jsdelivr',
-		href: 'https://www.jsdelivr.com',
-	},
-	{
-		name: 'Devicon',
-		type: 'devicon',
-		icon: 'devicon-devicon-plain colored',
-		href: 'https://devicon.dev',
-	},
-	{
-		name: 'SI',
-		type: 'fallback',
-		href: 'https://github.com/tandpfun/skill-icons',
-	},
-	{
-		name: 'Simple Icons',
-		type: 'img',
-		src: 'https://cdn.simpleicons.org/simpleicons',
-		href: 'https://simpleicons.org',
-	},
-	{
-		name: 'Netlify',
-		type: 'devicon',
-		icon: 'devicon-netlify-plain',
-		href: 'https://www.netlify.com',
-	},
-	{
-		name: 'GitHub',
-		type: 'devicon',
-		icon: 'devicon-github-original',
-		href: 'https://github.com',
-	},
-    {
-		name: 'GitHub Copilot',
-		type: 'img',
-		src: ' https://cdn.simpleicons.org/githubcopilot',
-		href: 'https://github.com',
-	},
-]
+import {site} from '../config/site.js'
+import {icons} from "../data/Icons.js";
 
 export default function Credits() {
 	const year = new Date().getFullYear()
@@ -64,7 +9,7 @@ export default function Credits() {
 		<div className="section py-10 border-t border-base-300">
 			<div className="text-sm opacity-70 mb-3">I built this page mostly using</div>
 			<ul className="flex flex-wrap items-center justify-center gap-8 py-8">
-				{items.map((it) => (
+				{icons().map((it) => (
 					<li key={it.name} className="list-none">
 						<a
 							href={it.href}

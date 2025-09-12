@@ -1,7 +1,7 @@
-import React, {useMemo, useState} from 'react'
+import React, {useState} from 'react'
 import NavBar from './components/NavBar.jsx'
 import Hero from './components/Hero.jsx'
-import Skills from './components/Skills.jsx'
+import {Skills} from './components/Skills.jsx'
 import BigSix from './components/BigSix.jsx'
 import Projects from './components/Projects.jsx'
 import Timeline from './components/Timeline.jsx'
@@ -12,12 +12,12 @@ function App() {
     const [skillFilter, setSkillFilter] = useState('All')
     const [projectQuery, setProjectQuery] = useState('')
 
-    const actions = useMemo(() => ({
-        setSkillFilter, setProjectQuery, navigate: (id) => {
-            const el = document.getElementById(id)
-            if (el) el.scrollIntoView({behavior: 'smooth', block: 'start'})
-        },
-    }), [],)
+    // const actions = useMemo(() => ({
+    //     setSkillFilter, setProjectQuery, navigate: (id) => {
+    //         const el = document.getElementById(id)
+    //         if (el) el.scrollIntoView({behavior: 'smooth', block: 'start'})
+    //     },
+    // }), [],)
 
     // const handlePrompt = (text) => {
     //     const q = text.trim().toLowerCase()
