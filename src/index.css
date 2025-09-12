@@ -5,3 +5,4 @@ html { scroll-behavior: smooth; }
 
 .section { @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8; }
 .section-title { @apply text-3xl font-bold text-primary mb-6; }
+

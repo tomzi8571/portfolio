@@ -1,0 +1,29 @@
+.iconCQ {
+  container-type: size;
+  container-name: icon;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.iconCQ > i {
+  display: block;
+  font-size: 90cqmin;
+  line-height: 1;
+}
+.iconCQ > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.iconCQ > span {
+  display: block;
+  font-size: 70cqmin;
+  line-height: 1;
+  font-weight: 600;
+}
+@supports not (font-size: 1cqmin) {
+  .iconCQ > i { font-size: 2.25rem; }
+  .iconCQ > span { font-size: 1.75rem; }
+}
+

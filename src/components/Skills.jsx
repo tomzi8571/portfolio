@@ -1,5 +1,6 @@
 import React, {useMemo, useState} from 'react'
 import {skills} from '../data/skills.js'
+import Icon from './Icon.jsx'
 
 const TABS = ['All', 'Deployment', 'Frontend', 'Backend', 'Others']
 
@@ -40,29 +41,24 @@ export function Skills({filter, onFilterChange}) {
     </div>;
 
     const SkillButtons = () => <ul className="flex flex-wrap gap-2">
-        {items.map((s) => (
-            <li key={s.name} className="list-none">
-                <button
-                    type="button"
-                    title={`${s.name}${s.category ? ' • ' + s.category : ''}${s.description ? ' • ' + s.description : ''}`}
-                    className="btn btn-md btn-outline rounded-full inline-flex items-center gap-2 whitespace-nowrap"
-                >
-                    {(s.svg || s.icon) && showIcons && (
-                        <span className="inline-flex items-center justify-center w-5 h-5">
-                          {s.svg ? (
-                              <img src={s.svg} alt="" className="w-4 h-4 object-contain"/>
-                          ) : s.icon ? (
-                              <i className={`${s.icon} text-lg`} aria-hidden="true"></i>
-                          ) : (
-                              // <span className="text-xs font-semibold">{s.name.charAt(0)}</span>
-                              <span className="text-xs font-semibold"></span>
-                          )}
-                        </span>
-                    )}
-                    <span>{s.name}</span>
-                </button>
-            </li>
-        ))}
+        {items.map((s) => {
+            return (
+                <li key={s.name} className="list-none">
+                    <button
+                        type="button"
+                        title={`${s.name}${s.category ? ' • ' + s.category : ''}${s.description ? ' • ' + s.description : ''}`}
+                        className="btn btn-md btn-outline rounded-full inline-flex items-center gap-2 whitespace-nowrap"
+                    >
+                        {showIcons && (
+                            // <span className="inline-flex items-center justify-center w-5 h-5">
+                                <Icon name={s.name} className="w-6 h-6 p-1" fallback=" "/>
+                            // </span>
+                        )}
+                        <span>{s.name}</span>
+                    </button>
+                </li>
+            )
+        })}
     </ul>;
 
     return (
@@ -80,10 +76,3 @@ export function Skills({filter, onFilterChange}) {
 
     )
 }
-
-
-
-
-
-
-

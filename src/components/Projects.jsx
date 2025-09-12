@@ -3,7 +3,7 @@ import {fetchPopularRepos} from '../utils/github.js'
 import {site} from '../config/site.js'
 import {capitalize} from 'lodash-es'
 
-export default function Projects({query, onQueryChange}) {
+export default function Projects({query}) {
     const [repos, setRepos] = useState([])
     const [loading, setLoading] = useState(true)
 
