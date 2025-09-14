@@ -1,4 +1,10 @@
 {
+  "plugins": {
+    "@csmith/release-it-calver-plugin": {
+      "format": "YYYY.MM.DD.minor",
+      "increment": "calendar"
+    }
+  },
   "git": {
     "tagName": "v${version}",
     "commitMessage": "chore(release): v${version}"
