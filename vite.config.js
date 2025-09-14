@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-const pkg = await import('./package.json', { assert: { type: 'json' } })
+const pkg = await import('./package.json')
 
 export default defineConfig({
   plugins: [react()],
