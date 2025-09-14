@@ -16,7 +16,7 @@
     },
   "github": {
     "release": true,
-    "tokenRef": "PERSONAL_GITHUB_MINIMAL_PERMISSIONS_PORTFOLIO"
+    "tokenRef": "PERSONAL_GITHUB_MINIMAL_CLASSIC_PORTFOLIO_TOKEN"
   },
   "npm": {
     "publish": false,
