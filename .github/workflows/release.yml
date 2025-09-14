@@ -22,7 +22,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git remote set-url origin https://x-access-token:${{ secrets.PERSONAL_GITHUB_MINIMAL_PERMISSIONS_PORTFOLIO}}@github.com/tomzi8571/portfolio.git
+          git remote set-url origin https://x-access-token:${{ secrets.PERSONAL_GITHUB_MINIMAL_CLASSIC_PORTFOLIO_TOKEN}}@github.com/tomzi8571/portfolio.git
 
       - name: Install dependencies
         run: npm ci
@@ -38,9 +38,9 @@ jobs:
           GIT_COMMITTER_NAME: github-actions[bot]
           GIT_COMMITTER_EMAIL: github-actions[bot]@users.noreply.github.com
           # Use your PAT here:
-          GITHUB_TOKEN: ${{  secrets.PERSONAL_GITHUB_MINIMAL_PERMISSIONS_PORTFOLIO}}
+          GITHUB_TOKEN: ${{secrets.PERSONAL_GITHUB_MINIMAL_CLASSIC_PORTFOLIO_TOKEN}}
       - name: Deploy to gh-pages
         run: npm run deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_MINIMAL_PERMISSIONS_PORTFOLIO }}
+          GITHUB_TOKEN: ${{secrets.PERSONAL_GITHUB_MINIMAL_CLASSIC_PORTFOLIO_TOKEN }}
 
