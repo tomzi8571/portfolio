@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "private": true,
-  "version": "2025.9.14.4",
+  "version": "2025.9.1-4.5",
   "type": "module",
   "scripts": {
     "release:version": "release-it --ci --no-git.requireCleanWorkingDir",
