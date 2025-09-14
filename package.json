@@ -6,7 +6,8 @@
   "scripts": {
     "release:version": "release-it --ci --no-git.requireCleanWorkingDir",
     "dev": "vite",
-    "build": "npm run release:version && vite build",
+    "create-release": "npm run release:version",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "vite build",

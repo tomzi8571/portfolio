@@ -31,8 +31,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run build (auto-version and tag)
-        run: npm run build
+      - name: Create Release and build (auto-version and tag)
+        run: |
+          npm run build
+          npm run create-release
 
 #      - name: Push tags and commits
 #        run: git push --follow-tags origin master
