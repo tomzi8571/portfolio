@@ -13,10 +13,20 @@
         "push": false,
         "pushRepo": "origin",
         "pushArgs": "--follow-tags"
+
     },
   "github": {
     "release": true,
-    "tokenRef": "PERSONAL_GITHUB_MINIMAL_CLASSIC_PORTFOLIO_TOKEN"
+    "tokenRef": "PERSONAL_GITHUB_MINIMAL_CLASSIC_PORTFOLIO_TOKEN",
+    "releaseName": "v${version}",
+    "_draft": false,
+    "_prerelease": false,
+    "assets": [
+      "dist/**/*"
+    ],
+    "_notes": {
+      "config": "release-notes.json"
+    }
   },
   "npm": {
     "publish": false,
