@@ -33,12 +33,12 @@ jobs:
       - name: Push tags and commits
         run: git push --follow-tags origin master
         env:
-          GIT_AUTHOR_NAME: github-actions
-          GIT_AUTHOR_EMAIL: github-actions@github.com
-          GIT_COMMITTER_NAME: github-actions
-          GIT_COMMITTER_EMAIL: github-actions@github.com
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: github-actions[bot]@users.noreply.github.com
           # Use your PAT here:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_MINIMAL_PERMISSIONS_PORTFOLIO }}
+          GITHUB_TOKEN: ${{  secrets.PERSONAL_GITHUB_MINIMAL_PERMISSIONS_PORTFOLIO}}
       - name: Deploy to gh-pages
         run: npm run deploy
         env:

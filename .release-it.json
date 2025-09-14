@@ -5,9 +5,10 @@
       "increment": "calendar"
     }
   },
-  "git": {
+  "github": {
     "tagName": "v${version}",
-    "commitMessage": "chore(release): v${version}"
+    "commitMessage": "chore(release): v${version}",
+    "token": "${PERSONAL_GITHUB_MINIMAL_PERMISSIONS_PORTFOLIO}"
   },
   "npm": {
     "publish": false,
