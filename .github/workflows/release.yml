@@ -36,10 +36,6 @@ jobs:
           npm run build
           npm run create-release
 
-#      - name: Push tags and commits
-#        run: git push --follow-tags origin master
-#        env:
-#          GITHUB_TOKEN: ${{secrets.PERSONAL_GITHUB_MINIMAL_CLASSIC_PORTFOLIO_TOKEN}}
       - name: Deploy to gh-pages
         run: npm run deploy
         env:
