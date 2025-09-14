@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "private": true,
-  "version": "2025.9.14.4",
+  "version": "2025.9.1-4.5",
   "type": "module",
   "scripts": {
     "release:version": "release-it --ci --no-git.requireCleanWorkingDir",
@@ -9,7 +9,7 @@
     "build": "npm run release:version && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run release:version && vite build",
+    "predeploy": "vite build",
     "deploy": "gh-pages -d dist -b gh-pages"
   },
   "dependencies": {
