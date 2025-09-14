@@ -5,10 +5,18 @@
       "increment": "calendar"
     }
   },
+    "git": {
+        "commitMessage": "chore(release): v${version}",
+        "tagName": "v${version}",
+        "requireCleanWorkingDir": true,
+        "requireBranch": "main",
+        "push": true,
+        "pushRepo": "origin",
+        "pushArgs": "--follow-tags"
+    },
   "github": {
-    "tagName": "v${version}",
-    "commitMessage": "chore(release): v${version}",
-    "token": "${PERSONAL_GITHUB_MINIMAL_PERMISSIONS_PORTFOLIO}"
+    "release": true,
+    "tokenRef": "PERSONAL_GITHUB_MINIMAL_PERMISSIONS_PORTFOLIO"
   },
   "npm": {
     "publish": false,
