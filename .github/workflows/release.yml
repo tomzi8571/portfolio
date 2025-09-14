@@ -22,6 +22,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.PERSONAL_GITHUB_MINIMAL_PERMISSIONS_PORTFOLIO}}@github.com/tomzi8571/portfolio.git
 
       - name: Install dependencies
         run: npm ci
@@ -31,7 +32,13 @@ jobs:
 
       - name: Push tags and commits
         run: git push --follow-tags origin master
-
+        env:
+          GIT_AUTHOR_NAME: github-actions
+          GIT_AUTHOR_EMAIL: github-actions@github.com
+          GIT_COMMITTER_NAME: github-actions
+          GIT_COMMITTER_EMAIL: github-actions@github.com
+          # Use your PAT here:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_MINIMAL_PERMISSIONS_PORTFOLIO }}
       - name: Deploy to gh-pages
         run: npm run deploy
         env:
