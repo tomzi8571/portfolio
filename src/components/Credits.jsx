@@ -7,6 +7,7 @@ const creditIcons = ['React', 'Tailwind CSS', 'jsDelivr', 'Devicon', 'SkillIcons
 export default function Credits() {
     const year = new Date().getFullYear()
     const linkedin = site.linkedin || ''
+    const version = import.meta.env.VITE_APP_VERSION;
     return (
         <div className="section py-10 border-t border-base-300">
             <div className="text-sm opacity-70 mb-3">I built this page mostly using</div>
@@ -86,7 +87,7 @@ export default function Credits() {
                 </div>
 
                 {/* Copyright */}
-                <div className="pt-3 text-center opacity-70">© {year} {site.name}. All rights reserved.</div>
+                <div className="pt-3 text-center opacity-70">© {year} {site.name}. All rights reserved. Version {version}</div>
             </div>
         </div>
 

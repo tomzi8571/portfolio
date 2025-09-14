@@ -1,21 +1,22 @@
 {
   "name": "portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
+    "release:version": "release-it --ci --no-git.requireCleanWorkingDir",
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run release:version && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "vite build",
+    "predeploy": "npm run release:version && vite build",
     "deploy": "gh-pages -d dist -b gh-pages"
   },
   "dependencies": {
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
     "dompurify": "^3.1.6",
-    "lodash-es": "^4.17.21"
+    "lodash-es": "^4.17.21",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
@@ -31,6 +32,7 @@
     "gh-pages": "^6.1.1",
     "globals": "^16.3.0",
     "postcss": "^8.4.47",
+    "release-it": "^19.0.4",
     "tailwindcss": "^4.1.13",
     "vite": "^7.1.2"
   }

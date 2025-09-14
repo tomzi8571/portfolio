@@ -1,0 +1,15 @@
+{
+  "git": {
+    "tagName": "v${version}",
+    "commitMessage": "chore(release): v${version}"
+  },
+  "npm": {
+    "publish": false,
+    "version": "${version}"
+  },
+  "hooks": {
+    "before:init": [
+      "echo 'Starting rolling release versioning...'"
+    ]
+  }
+}
