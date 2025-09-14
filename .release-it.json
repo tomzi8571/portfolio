@@ -1,7 +1,7 @@
 {
   "plugins": {
     "@csmith/release-it-calver-plugin": {
-      "format": "YYYY.MM.DD.minor",
+      "format": "YYYY.MM.DD.patch",
       "increment": "calendar"
     }
   },
