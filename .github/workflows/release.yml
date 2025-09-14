@@ -9,6 +9,10 @@ permissions:
   contents: write
   deployments: write
 
+concurrency:
+  group: deploy-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+
 jobs:
   release-deploy:
     runs-on: ubuntu-latest
