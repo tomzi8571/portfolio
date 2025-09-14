@@ -10,7 +10,7 @@
         "tagName": "v${version}",
         "requireCleanWorkingDir": true,
         "requireBranch": "master",
-        "push": false,
+        "push": true,
         "pushRepo": "origin",
         "pushArgs": "--follow-tags"
 
