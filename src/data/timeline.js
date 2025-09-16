@@ -1,7 +1,9 @@
+import SAPCertifiedDeveloperIcon from '../assets/SAPCertifiedDeveloperIcon.jsx';
+
 export const timeline = [
     {
         period: '2016 – 2025',
-        title: 'Senior SAP Commerce Full Stack and Backend Engineer',
+        title: 'Senior SAP Commerce Full Stack Engineer',
         company: 'Netconomy GmbH',
         description: 'Developed a 360° e‑commerce platforms using the enterprise <strong>SAP Commerce Cloud</strong> (Hybris) application framework. ' +
             'SAP Commerce is an enterprise e‑commerce platform and application framework for building and scaling omnichannel storefronts, ' +
@@ -33,6 +35,7 @@ export const timeline = [
         title: 'SAP Certified Development Professional',
         company: 'Certification',
         url: 'https://www.credly.com/badges/7dfadb6d-c748-4d11-9b08-181d338c0ca9',
+        icon: SAPCertifiedDeveloperIcon,
         description: 'SAP Commerce Cloud 6.7 Developer',
         skills: ['SAP Commerce Cloud', 'Java', 'Spring DI', 'Caching Strategies', 'OCC REST API', 'Security', 'Service Layer Architecture',
             'Unit/Integration Testing',

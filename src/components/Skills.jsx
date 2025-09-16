@@ -47,7 +47,7 @@ export function Skills({filter, onFilterChange}) {
                     <button
                         type="button"
                         title={`${s.name}${s.category ? ' • ' + s.category : ''}${s.description ? ' • ' + s.description : ''}`}
-                        className="btn btn-outline btn-md rounded-full inline-flex items-center gap-2 whitespace-nowrap border-base-content/10 hover:border-base-content/0 bg-base-200 hover:bg-base-300 transition-colors"
+                        className="btn btn-outline btn-md rounded-full inline-flex items-center gap-2 whitespace-nowrap border-base-content/10 hover:border-base-content/0 bg-base-200/20 hover:bg-base-200/80 transition-colors"
                     >
                         {showIcons && (
                             <Icon name={s.name} className="w-6 h-6 p-1" fallback=" "/>
