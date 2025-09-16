@@ -1,8 +1,33 @@
 @import "tailwindcss";
-@plugin "daisyui";
 
-html { scroll-behavior: smooth; }
+@plugin "daisyui" {
+    /*themes: light --default, dark --prefersdark, corporate, synthwave, retro, cyberpunk, valentine, halloween, garden, forest, aqua, lofi, pastel, fantasy, wireframe, black, luxury, dracula;*/
+    themes: all;
+    root: "html";
+    logs: true;
+}
 
-.section { @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8; }
-.section-title { @apply text-3xl font-bold text-primary mb-6; }
+#root {
+    @apply: bg-base-content text-base-content;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+
+}
+
+.section {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.section-title {
+    @apply text-3xl font-bold mb-6 text-base-content/90;
+}
 

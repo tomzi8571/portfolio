@@ -40,7 +40,7 @@ function App() {
     //     return actions.setProjectQuery(q)
     // }
 
-    return (<div className="relative">
+    return (<div className="relative ">
             <NavBar/>
             <main>
                 <section id="home" className="section pt-28">

@@ -16,7 +16,7 @@ export function Skills({filter, onFilterChange}) {
         {TABS.map((t) => (
             <button
                 key={t}
-                className={`btn btn-sm ${filter === t ? 'btn-primary' : 'btn-outline'}`}
+                className={`btn btn-sm ${filter === t ? 'btn-primary' : 'btn-outline'}  border-base-content/30`}
                 onClick={() => onFilterChange(t)}
             >
                 {t}
@@ -47,12 +47,10 @@ export function Skills({filter, onFilterChange}) {
                     <button
                         type="button"
                         title={`${s.name}${s.category ? ' • ' + s.category : ''}${s.description ? ' • ' + s.description : ''}`}
-                        className="btn btn-md btn-outline rounded-full inline-flex items-center gap-2 whitespace-nowrap"
+                        className="btn btn-outline btn-md rounded-full inline-flex items-center gap-2 whitespace-nowrap border-base-content/10 hover:border-base-content/0 bg-base-200 hover:bg-base-300 transition-colors"
                     >
                         {showIcons && (
-                            // <span className="inline-flex items-center justify-center w-5 h-5">
-                                <Icon name={s.name} className="w-6 h-6 p-1" fallback=" "/>
-                            // </span>
+                            <Icon name={s.name} className="w-6 h-6 p-1" fallback=" "/>
                         )}
                         <span>{s.name}</span>
                     </button>

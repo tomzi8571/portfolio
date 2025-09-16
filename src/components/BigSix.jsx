@@ -126,15 +126,15 @@ function Icon({ kind }) {
 
 export default function BigSix() {
 	return (
-		<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+		<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
 			{BIG_SIX.map((b) => (
-				<div key={b.title} className="card bg-base-200">
+				<div key={b.title} className="card bg-base-200 hover:bg-base-300 transition-colors">
 					<div className="card-body p-5">
 						<div className="flow-root">
-							<div className="float-left w-10 h-10 rounded-xl bg-base-100 border border-base-300 mr-3 mb-1 flex items-center justify-center">
+							<div className="float-left w-10 h-10 rounded-xl bg-secondary-content/10 border border-secondary/10 mr-3 mb-1 flex items-center justify-center">
 								<Icon kind={b.icon} />
 							</div>
-							<div className="text-primary font-semibold">{b.title}</div>
+							<h2 className="card-title 2xl:text-primary">{b.title}</h2>
 							<div className="text-base-content/80 text-sm mt-1">{b.desc}</div>
 						</div>
 					</div>

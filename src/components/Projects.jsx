@@ -96,7 +96,7 @@ export default function Projects({query}) {
                         return (
                             <div key={r.id} className="card bg-base-200 hover:bg-base-300 transition-colors">
                                 <div className="card-body p-5">
-                                    <div className="font-semibold">
+                                    <div className="card-title 2xl:text-primary font-semibold">
                                         <a
                                             href={r.html_url}
                                             target="_blank"
@@ -109,11 +109,11 @@ export default function Projects({query}) {
                                         </a>
                                     </div>
                                     {r.description && (
-                                        <div className="text-sm text-base-content/70">
+                                        <div className="text-base-content/80 text-sm mt-1">
                                             {r.description}
                                         </div>
                                     )}
-                                    <div className="mt-2 text-xs text-base-content/60 flex items-center gap-2">
+                                    <div className="mt-2 text-xs text-base-content/80 flex items-center gap-2">
                                         {/* GitHub icon link */}
                                         <a
                                             href={r.html_url}
@@ -121,7 +121,7 @@ export default function Projects({query}) {
                                             rel="noreferrer"
                                             title="GitHub"
                                             aria-label="GitHub Repo"
-                                            className="inline-flex items-center text-base-content/70 hover:text-primary transition-colors"
+                                            className="inline-flex items-center text-base-content/50 hover:text-primary transition-colors"
                                         >
                                             <i className="devicon-github-original text-base" />
                                         </a>
