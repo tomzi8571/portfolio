@@ -94,7 +94,7 @@ export default function Projects({query}) {
                                 : `https://${homepageRaw}`
                             : ''
                         return (
-                            <div key={r.id} className="card bg-base-200 hover:bg-base-300 transition-colors">
+                            <div key={r.id} className="card bg-base-200/40 hover:bg-base-200/80 border border-base-content/3 transition-colors">
                                 <div className="card-body p-5">
                                     <div className="card-title 2xl:text-primary font-semibold">
                                         <a

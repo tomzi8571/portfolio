@@ -128,7 +128,7 @@ export default function BigSix() {
 	return (
 		<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
 			{BIG_SIX.map((b) => (
-				<div key={b.title} className="card bg-base-200 hover:bg-base-300 transition-colors">
+				<div key={b.title} className="card bg-base-200/40 hover:bg-base-200/80 border border-base-content/3 transition-colors">
 					<div className="card-body p-5">
 						<div className="flow-root">
 							<div className="float-left w-10 h-10 rounded-xl bg-secondary-content/10 border border-secondary/10 mr-3 mb-1 flex items-center justify-center">

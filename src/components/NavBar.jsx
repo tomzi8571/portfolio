@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react'
 import {site} from '../config/site.js'
-import styles from './NavBar.module.css';
 import SunIcon from '../assets/sun.svg?react';
 import MoonIcon from '../assets/moon.svg?react';
 
@@ -102,7 +101,7 @@ export default function NavBar() {
         <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur border-b border-base-300">
             {/*<div className="section">*/}
             <div className="section navbar px-0 h-16">
-                <div className="navbar-start font-bold text-primary text-lg">{site.name}</div>
+                <div className="navbar-start font-extrabold text-primary text-lg">{site.name}</div>
 
                 <nav className="hidden sm:flex gap-6 text-base-content/80">
                     <NavItems/>

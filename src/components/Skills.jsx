@@ -24,7 +24,7 @@ export function Skills({filter, onFilterChange}) {
         ))}
     </>;
 
-    const ShowIconsButton = enabled => <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
+    const ShowIconsButton = ({ enabled }) => <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
         {enabled ? (
                 <label className="flex items-center gap-2 cursor-pointer select-none">
                     <span className="text-sm opacity-80">Show icons</span>
@@ -47,7 +47,7 @@ export function Skills({filter, onFilterChange}) {
                     <button
                         type="button"
                         title={`${s.name}${s.category ? ' • ' + s.category : ''}${s.description ? ' • ' + s.description : ''}`}
-                        className="btn btn-outline btn-md rounded-full inline-flex items-center gap-2 whitespace-nowrap border-base-content/10 hover:border-base-content/0 bg-base-200/20 hover:bg-base-200/80 transition-colors"
+                        className="btn btn-outline btn-md rounded-full inline-flex items-center gap-2 whitespace-nowrap border-base-content/10 hover:border-base-content/0 bg-base-200/20 hover:bg-primary/40 transition-colors"
                     >
                         {showIcons && (
                             <Icon name={s.name} className="w-6 h-6 p-1" fallback=" "/>
@@ -65,10 +65,12 @@ export function Skills({filter, onFilterChange}) {
                 <div className="flex flex-wrap gap-2">
                     <Selector/>
                 </div>
-                {ShowIconsButton(false)}
 
+                <ShowIconsButton enabled={false} />
+                <div className="w-full mt-4">
                 {/* Flowing, content-width buttons */}
                 <SkillButtons/>
+                </div>
             </div>
         </div>
 

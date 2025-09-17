@@ -7,7 +7,7 @@ export const skills = [
     { name: 'Kubernetes', category: 'Deployment', description: 'Orchestrates containers, scaling, and resilience.' },
     { name: 'Varnish', category: 'Deployment', description: 'HTTP accelerator and caching reverse proxy.' },
     { name: 'Nginx', category: 'Deployment', description: 'High‑performance web server and reverse proxy.' },
-    { name: 'Cloud Ready Developer', category: 'Deployment', description: '12‑factor, stateless processes, containers, and parity.' },
+    { name: 'Cloud Ready', category: 'Deployment', description: '12‑factor, stateless processes, containers, and parity.' },
 
     // Frontend
     { name: 'React', category: 'Frontend', description: 'Component‑based UI library for interactive apps.' },

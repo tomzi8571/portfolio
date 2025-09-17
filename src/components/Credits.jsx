@@ -87,7 +87,7 @@ export default function Credits() {
                 </div>
 
                 {/* Copyright */}
-                <div className="pt-3 text-center opacity-70">© {year} {site.name}. All rights reserved. Version {version}</div>
+                <div className="pt-3 text-center opacity-70">© {year} {site.name}. All rights reserved. v{version}</div>
             </div>
         </div>
 

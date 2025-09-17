@@ -13,7 +13,7 @@ export const iconMap = {
     'Kubernetes': {type: 'devicon', class: 'devicon-kubernetes-plain colored'},
     'Varnish': {type: 'img', src: 'https://cdn.simpleicons.org/varnish'},
     'Nginx': {type: 'devicon', class: 'devicon-nginx-original colored'},
-    'Cloud Ready Developer': {type: 'img', src: '/icons/cloud.svg'},
+    'Cloud Ready': {type: 'img', src: '/icons/cloud.svg'},
     // Frontend
     'React': {type: 'devicon', class: 'devicon-react-original colored', href: 'https://react.dev'},
     'Tailwind CSS': {type: 'devicon', class: 'devicon-tailwindcss-plain colored', href: 'https://tailwindcss.com'},
