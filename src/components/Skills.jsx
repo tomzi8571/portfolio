@@ -2,7 +2,7 @@ import React, {useMemo, useState} from 'react'
 import {skills} from '../data/skills.js'
 import Icon from './Icon.jsx'
 
-const TABS = ['All', 'Deployment', 'Frontend', 'Backend', 'Others']
+const TABS = ['All', 'Hard/Soft Skills', 'Deployment', 'Frontend', 'Backend', 'Others']
 
 export function Skills({filter, onFilterChange}) {
     const [showIcons, setShowIcons] = useState(true)
@@ -46,7 +46,7 @@ export function Skills({filter, onFilterChange}) {
                 <li key={s.name} className="list-none">
                     <button
                         type="button"
-                        title={`${s.name}${s.category ? ' • ' + s.category : ''}${s.description ? ' • ' + s.description : ''}`}
+                        title={`${s.description ? s.description : ''}`}
                         className="btn btn-outline btn-md rounded-full inline-flex items-center gap-2 whitespace-nowrap border-base-content/10 hover:border-base-content/0 bg-base-200/20 hover:bg-primary/40 transition-colors"
                     >
                         {showIcons && (

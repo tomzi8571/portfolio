@@ -47,20 +47,21 @@ function App() {
                 <Hero/>
             </section>
 
-            <section id="skills" className="section py-16">
-                { /* Development Toolkit, Technical Proficiencies, Engineering Capabilities
-                     Tools & Technologies, Applied Technologies, Platform Expertise
-                */}
-                <h2 className="section-title">Development Toolkit</h2>
-                <Skills filter={skillFilter} onFilterChange={setSkillFilter}/>
-            </section>
-
             <section id="bigsix" className="section py-16">
                 {/*Engineering Focus, Core Competencies, Signature Strengths*/}
                 {/*Key Areas of Expertise, Architectural Pillars, What I Bring to the Team*/}
                 <h2 className="section-title">Core Competences</h2>
                 <BigSix/>
             </section>
+
+            <section id="skills" className="section py-16">
+                { /* Development Toolkit, Technical Proficiencies, Engineering Capabilities
+                     Tools & Technologies, Applied Technologies, Platform Expertise
+                */}
+                <h2 className="section-title">Expertise and Competencies</h2>
+                <Skills filter={skillFilter} onFilterChange={setSkillFilter}/>
+            </section>
+
 
             <section id="projects" className="section py-16">
                 <h2 className="section-title">My public Projects</h2>
