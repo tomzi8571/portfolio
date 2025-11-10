@@ -26,6 +26,7 @@ export default function Projects({query}) {
     const filtered = useMemo(() => {
         const q = (query || '').toLowerCase()
         if (!q) return repos
+        console.log(repos)
         return repos.filter(
             (r) =>
                 r.name.toLowerCase().includes(q) ||

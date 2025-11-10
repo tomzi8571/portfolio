@@ -2,6 +2,22 @@ import SAPCertifiedDeveloperIcon from '../assets/SAPCertifiedDeveloperIcon.jsx';
 
 export const timeline = [
     {
+        period: '2025',
+        title: 'Java Spring Boot Full Stack Masterclass - eCommerce Platform Development',
+        company: 'Masterclass Certification',
+        url: 'https://www.udemy.com/certificate/UC-4aec9fd3-e977-4707-b5d3-ff275a7b5f77/',
+        // icon: SAPCertifiedDeveloperIcon,
+        description: 'Design and implementation of a Full-Stack e-commerce Platform using <strong>Java Spring Boot</strong>' +
+            ' for the backend and a <strong>React</strong> based frontend. Covered key aspects such as <strong>Product Design</strong>, <strong>Software Architecture</strong>, ' +
+            '<strong>Order Workflow</strong>, <strong>User Management</strong>, ' +
+            'Product Catalog, <strong>Shopping Cart</strong>, <strong>Stripe Payment</strong> Integration, <strong>Authentication/Authorization</strong>, <stron>Docker</strong> Deployments.' +
+            ' Emphasized best practices in' +
+            ' <strong>RESTful API design</strong>, <strong>Security (JWT)</strong>, and <strong>Responsive UI development (Tailwind CSS, Material-UI)</strong>.',
+        skills: ['Software Architecture', 'Product Design', 'Platform Integration', 'Docker Deployment',
+            'Responsive Design', 'REST API Engineering', 'Security', 'Service Layer Architecture', 'React', 'Tailwind CSS',
+            'Spring Boot', 'Spring Security', 'JWT', 'Docker', 'AWS', 'Render', 'Github', 'Github Pages', 'CI/CD'],
+    },
+    {
         period: '2016 – 2025',
         title: 'Senior SAP Commerce Full Stack Engineer',
         company: 'Netconomy GmbH',
