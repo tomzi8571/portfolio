@@ -28,7 +28,7 @@ export const timeline = [
             'service architecture, as well as on the <strong>frontend</strong> — customizing and optimizing product/content management, pricing, promotions, ' +
             'checkout, order management, personalization, and API integrations. Collaborated with multinational expert teams and' +
             ' clients to <strong>architect</strong> and implement integrated enterprise solutions, focusing on user, product, ' +
-            'order, and delivery management and also user experience. ' +
+            'order, and delivery management and user experience. ' +
             'I specialized as a <strong>backend developer</strong>, designing robust software architectures and integrating new' +
             ' requirements into complex legacy environments. Maintained close communication with stakeholders to understand ' +
             'enterprise architecture and to make informed technical decisions as part of my daily work. Integrated with internal and external systems ' +
@@ -73,13 +73,22 @@ export const timeline = [
         skills: ['Java', 'Hibernate', 'Oracle', 'SQL', 'jBPM', 'JSP/Servlet/JSTL', 'JUnit', 'Jenkins', 'Scrum'],
     },
     {
+        period: '1997 - 2000',
+        title: 'Masters, Computer Science and Telematics',
+        company: 'Technical University, Graz, Austria',
+        description: 'Completed three years of Master\'s studies, in <strong>Neuroscience and Medical Engineering</strong> within <strong>Computer Science and Telematics</strong>. (degree not completed).',
+        skills: [
+            'Neuroinformatics', 'Medical Technology', 'Software Engineering', 'Software Systems & Algorithms'
+        ],
+    },
+    {
         period: '',
         title: 'B.Sc. Computer Science and Telematics',
         company: 'Technical University, Graz, Austria',
         description: 'Completed a <strong>Bachelor of Science</strong> in <strong>Computer Science and Telematics</strong>. Authored a thesis on “A General Web‑Interface of an Assessment Engine Instantiated for a TP‑based Mathematics Assistant,” focusing on <strong>web-based educational technology</strong> and <strong>user interface design</strong>.',
         skills: [
-            'Software Engineering', 'Software Systems & Algorithms', 'Neuroinformatics', 'Medical Technology',
-            'Advanced Math & Physics', 'Electrical Engineering',
+            'Software Engineering', 'Software Systems & Algorithms', 'Advanced Math & Physics', 'Electrical Engineering'
+
         ],
     }
 ]
