@@ -57,8 +57,8 @@ export default function NavBar() {
         {id: 'home', label: 'Home'},
         {id: 'skills', label: 'Skills'},
         // {id: 'bigsix', label: 'Big Six'},
-        {id: 'projects', label: 'Projects'},
         {id: 'timeline', label: 'Timeline'},
+        {id: 'projects', label: 'Projects'},
         {id: 'contact', label: 'Contact'},
     ]
     // DaisyUI built-in themes to expose in the dropdown (excluding light/dark shown as toggle)

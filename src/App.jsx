@@ -50,7 +50,7 @@ function App() {
             <section id="bigsix" className="section py-16">
                 {/*Engineering Focus, Core Competencies, Signature Strengths*/}
                 {/*Key Areas of Expertise, Architectural Pillars, What I Bring to the Team*/}
-                <h2 className="section-title">Core Competences</h2>
+                <h2 className="section-title">Core Competencies</h2>
                 <BigSix/>
             </section>
 
@@ -58,19 +58,18 @@ function App() {
                 { /* Development Toolkit, Technical Proficiencies, Engineering Capabilities
                      Tools & Technologies, Applied Technologies, Platform Expertise
                 */}
-                <h2 className="section-title">Expertise and Competencies</h2>
+                <h2 className="section-title">Professional Skills</h2>
                 <Skills filter={skillFilter} onFilterChange={setSkillFilter}/>
             </section>
 
-
-            <section id="projects" className="section py-16">
-                <h2 className="section-title">My public Projects</h2>
-                <Projects query={projectQuery} onQueryChange={setProjectQuery}/>
+            <section id="timeline" className="section py-16">
+                <h2 className="section-title">Career Timeline</h2>
+                <Timeline/>
             </section>
 
-            <section id="timeline" className="section py-16">
-                <h2 className="section-title">Timeline</h2>
-                <Timeline/>
+            <section id="projects" className="section py-16">
+                <h2 className="section-title">Personal Projects</h2>
+                <Projects query={projectQuery} onQueryChange={setProjectQuery}/>
             </section>
 
             <section id="contact" className="section py-16">
