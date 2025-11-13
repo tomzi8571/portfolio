@@ -3,29 +3,43 @@ import SAPCertifiedDeveloperIcon from '../assets/SAPCertifiedDeveloperIcon.jsx';
 export const timeline = [
     {
         period: '2025',
-        title: 'Java Spring Boot Full Stack Masterclass - eCommerce Platform Development',
+        title: 'Java Spring Boot Full-Stack Masterclass - eCommerce Platform Development',
         company: 'Masterclass Certification',
         url: 'https://www.udemy.com/certificate/UC-4aec9fd3-e977-4707-b5d3-ff275a7b5f77/',
         // icon: SAPCertifiedDeveloperIcon,
         description: 'Design and implementation of a Full-Stack e-commerce Platform using <strong>Java Spring Boot</strong>' +
             ' for the backend and a <strong>React</strong> based frontend. Covered key aspects such as <strong>Product Design</strong>, <strong>Software Architecture</strong>, ' +
             '<strong>Order Workflow</strong>, <strong>User Management</strong>, ' +
-            'Product Catalog, <strong>Shopping Cart</strong>, <strong>Stripe Payment</strong> Integration, <strong>Authentication/Authorization</strong>, <stron>Docker</strong> Deployments.' +
+            'Product Catalog, <strong>Shopping Cart</strong>, <strong>Stripe Payment</strong> Integration, <strong>Authentication/Authorization</strong>, <strong>Docker</strong> Deployments.' +
             ' Emphasized best practices in' +
             ' <strong>RESTful API design</strong>, <strong>Security (JWT)</strong>, and <strong>Responsive UI development (Tailwind CSS, Material-UI)</strong>.',
         skills: ['Software Architecture', 'Product Design', 'Platform Integration', 'Docker Deployment',
             'Responsive Design', 'REST API Engineering', 'Security', 'Service Layer Architecture', 'React', 'Tailwind CSS',
-            'Spring Boot', 'Spring Security', 'JWT', 'Docker', 'AWS', 'Render', 'Github', 'Github Pages', 'CI/CD'],
+            'Spring Boot', 'Spring Security', 'JWT', 'AWS', 'Render', 'GitHub', 'GitHub Pages', 'CI/CD'],
     },
     {
         period: '2016 – 2025',
-        title: 'Senior SAP Commerce Full Stack Engineer',
+        title: 'Senior SAP Commerce Full-Stack Engineer',
         company: 'Netconomy GmbH',
         url: 'https://www.netconomy.net/',
-        description: 'Led the development of comprehensive e-commerce platforms using <strong>SAP Commerce Cloud (Hybris)</strong>, delivering <strong>scalable</strong> <strong>omnichannel</strong> solutions for both <strong>B2C</strong> and <strong>B2B</strong> clients. Contributed across the <strong>full stack</strong>—<strong>backend</strong>, backoffice, and <strong>frontend</strong>—customizing and optimizing product/content management, pricing, promotions, checkout, order management, personalization, and API integrations. Collaborated with multinational expert teams and clients to <strong>architect</strong> and implement integrated enterprise solutions, focusing on user, product, order, and delivery management. ' +
-            'Specialized as a <strong>backend developer</strong>, designing robust software architectures and integrating new requirements into complex legacy environments. Maintained close communication with stakeholders to understand enterprise architecture and make informed technical decisions. Integrated with internal and external systems (PIM, Amplience, ESB, marketplaces) via <strong>REST</strong>, ActiveMQ, and other interfaces. ' +
-            'Gained hands-on experience in frontend development (<strong>React</strong>, Redux, Vite, <strong>GraphQL</strong>) in collaboration with UI/UX teams. Drove <strong>DevOps</strong> initiatives, building and maintaining <strong>CI/CD pipelines</strong> (<strong>Jenkins</strong>, <strong>Docker</strong>, <strong>Kubernetes</strong>), leading production deployments, and ensuring code quality through <strong>TDD</strong>, unit (JUnit, Mockito), and end-to-end testing. Enhanced system performance and <strong>security</strong>, handling high-traffic environments and mitigating vulnerabilities. ' +
-            'Delivered solutions for multinational clients with multi-billion revenues and millions of customers, including ' +
+        description: 'Architected and developed comprehensive e-commerce platforms using <strong>SAP Commerce Cloud (Hybris)</strong>, ' +
+            'delivering <strong>scalable</strong> <strong>omnichannel</strong> solutions for both <strong>B2C</strong> and ' +
+            '<strong>B2B</strong> clients. I contributed across the <strong>full stack</strong> — the whole <strong>backend</strong>, ' +
+            'service architecture, as well as on the <strong>frontend</strong> — customizing and optimizing product/content management, pricing, promotions, ' +
+            'checkout, order management, personalization, and API integrations. Collaborated with multinational expert teams and' +
+            ' clients to <strong>architect</strong> and implement integrated enterprise solutions, focusing on user, product, ' +
+            'order, and delivery management and also user experience. ' +
+            'I specialized as a <strong>backend developer</strong>, designing robust software architectures and integrating new' +
+            ' requirements into complex legacy environments. Maintained close communication with stakeholders to understand ' +
+            'enterprise architecture and to make informed technical decisions as part of my daily work. Integrated with internal and external systems ' +
+            '(PIM, Amplience, ESB, Marketplace solutions) via <strong>REST</strong>, ActiveMQ, and other interfaces. ' +
+            'Gained hands-on experience in frontend development (<strong>React</strong>, Redux, Vite) ' +
+            'in collaboration with UI/UX teams. Drove <strong>DevOps</strong> initiatives, contributing and maintaining ' +
+            '<strong>CI/CD pipelines</strong> (<strong>Jenkins</strong>, <strong>Docker</strong>, ArgoCD) ' +
+            'leading production deployments, and ensuring code quality through <strong>TDD</strong>, unit testing' +
+            '(JUnit, Mockito) and end-to-end testing. Enhanced and maintained <strong>system performance</strong> through monitoring ' +
+            'multilayered caching architectures, handling high-traffic environments and ensuring <strong>security</strong> and <strong>XSS</strong> protections. ' +
+            'I provided solutions for multinational clients generating multi‑billion Euro revenues and serving millions of customers, including ' +
             '<a href="https://www.xxxlutz.com/" target="_blank" rel="noopener noreferrer"><strong>XXXLutz</strong></a>, ' +
             '<a href="https://www.hofer.at/" target="_blank" rel="noopener noreferrer"><strong>Hofer (Aldi)</strong></a>, ' +
             '<a href="https://www.staubli.com/" target="_blank" rel="noopener noreferrer"><strong>Stäubli</strong></a>, ' +
@@ -33,9 +47,9 @@ export const timeline = [
             '<a href="https://www.blue-tomato.com/" target="_blank" rel="noopener noreferrer"><strong>Blue Tomato</strong></a>, ' +
             '<a href="https://www.a1.group/en/group/telekom-austria-group" target="_blank" rel="noopener noreferrer"><strong>Telekom Austria</strong></a>, and others.',
         skills: [
-            'SAP Commerce Cloud (Hybris)', 'Java', 'Spring DI', 'CI/CD', 'Jenkins', 'Docker', 'Kubernetes', 'Microservices', 'REST', 'Agile/Scrum',
-            'TDD', 'JUnit', 'Mockito', 'Mirakl', 'ActiveMQ', 'React', 'ESB', 'SQL', 'Caching (Varnish, Nginx)',
-            'Security', 'XSS', 'CSRF', 'SQL Injection', 'Jira', 'Confluence', 'GitHub', 'Design Patterns'
+            'SAP Commerce Cloud (Hybris)', 'Java', 'Spring DI', 'CI/CD', 'Jenkins', 'Docker', 'Microservices', 'REST', 'Agile/Scrum',
+            'TDD', 'JUnit', 'Mockito', 'Mirakl Marketplace', 'ActiveMQ', 'React', 'ESB', 'SQL', 'Caching (Varnish, Nginx)',
+            'Security', 'XSS', 'CSRF', 'SQL Injection', 'Issue tracking', 'GitHub', 'Design Patterns'
         ],
     },
 
@@ -52,10 +66,10 @@ export const timeline = [
     },
     {
         period: '2001 – 2016',
-        title: 'Full‑stack Developer',
+        title: 'Full‑Stack Developer',
         company: 'Bearingpoint Infonova GmbH / Beyond Now',
         url: 'https://www.bearingpoint.com/',
-        description: 'Developed and maintained a <strong>multi-tenant servicing and provisioning platform</strong> for major multinational telecom clients, including <a href="https://www.a1.group/en/group/telekom-austria-group" target="_blank" rel="noopener noreferrer"><strong>Telekom Austria</strong></a> and others. Contributed as a <strong>full-stack engineer</strong> across all project phases, from requirements analysis to deployment, ensuring robust, scalable, and reliable solutions.',
+        description: 'Developed and maintained a <strong>multi-tenant servicing and provisioning platform</strong> for major multinational telecom clients, including <a href="https://www.a1.group/en/group/telekom-austria-group" target="_blank" rel="noopener noreferrer"><strong>Telekom Austria</strong></a> and others. Contributed as a <strong>Full-Stack engineer</strong> across all project phases, from requirements analysis to deployment, ensuring robust, scalable, and reliable solutions.',
         skills: ['Java', 'Hibernate', 'Oracle', 'SQL', 'jBPM', 'JSP/Servlet/JSTL', 'JUnit', 'Jenkins', 'Scrum'],
     },
     {
