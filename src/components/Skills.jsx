@@ -44,16 +44,29 @@ export function Skills({filter, onFilterChange}) {
         {items.map((s) => {
             return (
                 <li key={s.name} className="list-none">
-                    <button
-                        type="button"
-                        title={`${s.description ? s.description : ''}`}
-                        className="btn btn-outline btn-md rounded-full inline-flex items-center gap-2 whitespace-nowrap border-base-content/10 hover:border-base-content/0 bg-base-200/20 hover:bg-primary/40 transition-colors"
-                    >
-                        {showIcons && (
-                            <Icon name={s.name} className="w-6 h-6 p-1" fallback=" "/>
+                    <div className="relative inline-block group">
+                        <button
+                            type="button"
+                            title={`${s.description ? s.description : ''}`}
+                            aria-describedby={s.description ? `skill-desc-${s.name.replace(/\s+/g, '-')}` : undefined}
+                            className="btn btn-outline btn-md rounded-full inline-flex items-center gap-2 whitespace-nowrap border-base-content/10 hover:border-base-content/0 bg-base-200/20 hover:bg-primary/40 transition-colors"
+                        >
+                            {showIcons && (
+                                <Icon name={s.name} className="w-6 h-6 p-1" fallback=" " />
+                            )}
+                            <span>{s.name}</span>
+                        </button>
+
+                        {s.description && (
+                            <div
+                                id={`skill-desc-${s.name.replace(/\s+/g, '-')}`}
+                                role="tooltip"
+                                className="absolute left-1/2 -translate-x-1/2 mt-2 w-64 rounded bg-base-100/90 p-2 text-sm shadow z-10 opacity-0 invisible pointer-events-none transition-opacity duration-150 group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible"
+                            >
+                                {s.description}
+                            </div>
                         )}
-                        <span>{s.name}</span>
-                    </button>
+                    </div>
                 </li>
             )
         })}
