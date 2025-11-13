@@ -8,7 +8,7 @@ const BIG_SIX = [
 	},
 	{
 		title: 'API Integration & Design',
-		desc: 'Define and own API contracts; integrate PIM, Amplience, and Marketplace solutions; secure endpoints with JWT.',
+		desc: 'Define and own API contracts; integrate external systems, like PIM, Marketplace or other solutions; secure endpoints with JWT.',
 		icon: 'react',
 	},
 	{
