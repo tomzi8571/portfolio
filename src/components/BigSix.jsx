@@ -2,34 +2,34 @@ import React from 'react'
 
 const BIG_SIX = [
 	{
-		title: 'Enterprise Backend Development',
-		desc: 'I care deeply about reliable backends—designing Java/Spring Boot services with clean REST APIs that the team can evolve safely.',
+		title: 'Java & React Fullstack Engineering',
+		desc: 'Ship scalable Java/Spring backends and React frontends; enforce REST contracts and test driven development.',
 		icon: 'spring',
 	},
 	{
-		title: 'Full Stack Engineering',
-		desc: 'Frontend work matters to the team’s velocity, so React + Tailwind UIs are built to integrate cleanly with our APIs and deliver fast feedback.',
+		title: 'API Integration & Design',
+		desc: 'Define and own API contracts; integrate PIM, Amplience, and Marketplace solutions; secure endpoints with JWT.',
 		icon: 'react',
 	},
 	{
-		title: 'Microservices',
-		desc: 'I break systems into small, observable services so teammates can work independently without stepping on each other.',
+		title: 'Cloud & Microservice Integration',
+		desc: 'Build and operate observable, containerized microservices; automate deployments with Docker and ArgoCD/Jenkins.',
 		icon: 'microservices',
 	},
 	{
-		title: 'CI/CD and Quality',
-		desc: 'Continuous delivery is non‑negotiable for me and the team: pipelines (Jenkins/Argo), fast tests, and guarded releases keep us shipping confidently.',
+		title: 'Enterprise eCommerce Architecture',
+		desc: 'Design and optimize high‑performance eCommerce solutions. Ensure scalability, security, and seamless user experiences.',
+		icon: 'cloud',
+	},
+	{
+		title: 'High reliability & quality lifecycle',
+		desc: 'Ensure reliability through CI/CD, automated tests (unit/integration/E2E), caching, and monitoring.',
 		icon: 'cicd',
 	},
 	{
-		title: 'Agile Teams',
-		desc: 'I foster a positive, friendly culture with open communication and mutual support, so the team enjoys the work, thrives, and consistently delivers high‑quality value to customers.',
+		title: 'Multinational Agile Team Leadership',
+		desc: 'Lead cross‑functional teams, mentor engineers, and align stakeholders to deliver results.',
 		icon: 'team',
-	},
-	{
-		title: 'Cloud Ready Deployment',
-		desc: '12‑factor practices, stateless processes, and containers keep apps portable and production‑friendly, reducing team toil and incident risk.',
-		icon: 'cloud',
 	},
 ]
 
